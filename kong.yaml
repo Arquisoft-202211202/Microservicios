@@ -31,7 +31,7 @@ services:
 upstreams:
   - name: variables_upstream
     targets:
-      - target: 10.128.0.84:8080s
+      - target: 10.128.0.84:8080
         weight: 100
 
   - name: measurements_upstream

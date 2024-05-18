@@ -20,12 +20,17 @@ services:
         strip_path: false
     
 upstreams:
-  - name: variables_upstream
-    targets:
-      - target: 10.128.0.84:8080
-        weight: 100
+  # - name: variables_upstream
+  #   targets:
+  #     - target: 10.128.0.84:8080s
+  #       weight: 100
 
-  - name: measurements_upstream
+  # - name: measurements_upstream
+  #   targets:
+  #     - target: 10.128.0.85:8080
+  #       weight: 100
+        
+  - name: places_upstream
     targets:
-      - target: 10.128.0.85:8080
-        weight: 100
+      - target: 10.128.0.87:8080
+        weight: 100    
